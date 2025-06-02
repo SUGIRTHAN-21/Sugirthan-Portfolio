@@ -108,14 +108,15 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Initialize typing effect - disabled for now
-// window.addEventListener('load', function() {
-//     const heroTitle = document.querySelector('.hero-title');
-//     if (heroTitle) {
-//         const originalText = heroTitle.innerHTML;
-//         typeWriter(heroTitle, originalText, 50);
-//     }
-// });
+// Initialize typing effect for subtitle
+window.addEventListener('load', function() {
+    const heroSubtitle = document.querySelector('#typing-subtitle');
+    if (heroSubtitle) {
+        const originalText = heroSubtitle.textContent;
+        heroSubtitle.textContent = '';
+        typeWriter(heroSubtitle, originalText, 100);
+    }
+});
 
 // Contact form handling (if needed in future)
 function handleContactForm(event) {

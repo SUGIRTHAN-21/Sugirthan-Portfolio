@@ -50,7 +50,7 @@
                     <h1 class="hero-title">
                         Hi, I'm <span class="text-primary">Sugirthan J</span>
                     </h1>
-                    <h2 class="hero-subtitle">Aspiring Junior AI/ML Engineer</h2>
+                    <h2 class="hero-subtitle" id="typing-subtitle">Aspiring Junior AI/ML Engineer</h2>
                     <p class="hero-description">
                         Passionate about applying AI and machine learning to solve real-world problems. 
                         Currently pursuing a degree in Computer Technology with a focus on Python programming, 
@@ -76,8 +76,8 @@
                 </div>
                 <div class="col-lg-6 text-center" data-aos="fade-left">
                     <div class="hero-image">
-                        <img src="{{ url_for('static', filename='images/profile/profile.jpg') }}" 
-                             alt="Sugirthan J" class="img-fluid rounded-3 shadow-lg">
+                        <img src="{{ url_for('static', filename='images/profile/hero_profile.jpg') }}" 
+                             alt="Sugirthan J" class="img-fluid rounded-circle shadow-lg hero-profile-img">
                     </div>
                 </div>
             </div>
@@ -247,8 +247,9 @@
                                 <li>Gained practical experience in ML model deployment using Flask</li>
                             </ul>
                             <p><strong>Certificate No:</strong> INNOVATE/AIML/0006757</p>
-                            <button class="btn btn-sm btn-outline-primary" disabled>
-                                <i class="fas fa-certificate me-2"></i>Certificate Available Soon
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#certModal" 
+                                    onclick="showCertificate('innovate_internship.png', 'INNOVATE AI/ML Internship Certificate')">
+                                <i class="fas fa-certificate me-2"></i>View Certificate
                             </button>
                         </div>
                     </div>
@@ -382,11 +383,7 @@
                         <img src="{{ url_for('static', filename='images/certificates/cert8.png') }}" alt="Python for Data Science - NPTEL" class="img-fluid rounded">
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="certificate-card">
-                        <img src="{{ url_for('static', filename='images/certificates/cert9.png') }}" alt="Data Science Internship - CodSoft" class="img-fluid rounded">
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>

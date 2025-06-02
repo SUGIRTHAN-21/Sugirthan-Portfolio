@@ -609,6 +609,19 @@ footer .social-link:hover {
     100% { opacity: 1; }
 }
 
+/* Hero Profile Image Animation */
+.hero-profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
 /* Certificate Cards */
 .certificate-card {
     transition: var(--transition);

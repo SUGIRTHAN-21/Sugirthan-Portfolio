@@ -1,0 +1,115 @@
+VISHWAJITH J – PORTFOLIO
+==========================
+
+1. PERSONAL INTRODUCTION
+-------------------------
+Name: Sugirthan J
+Title: Aspiring Junior AI/ML Engineer
+Summary: Passionate about applying AI and machine learning to solve real-world problems. Currently pursuing a degree in Computer Technology with a focus on Python programming, data analysis, and prompt engineering.
+(github , linkedin , emailid icons alone to be present so when clicked on it it will be able to navigate to the respective profiles) , and a download resume button
+
+2. PROJECTS ( Git Repo links must be attached (will be provided in future) so create buttons for each)
+----------
+
+  a. AI-Powered Resume Analyzer & Quiz Evaluator
+
+* Description:** Built an intelligent system that analyzes resume content using AI and generates personalized assessment questions. Automated candidate evaluation and scoring, reducing manual screening time by 60%.
+* Technologies:** OCR, Python, Flask, Gemini AI Models (API)
+* View Repo Button:** *Link will be provided*
+
+---
+
+  b. Disease Classification Using Machine Learning
+
+* Description:** Developed a predictive model achieving 87% accuracy in disease identification based on user-input symptoms. Enabled early detection for common health conditions.
+* Technologies:** Logistic Regression, Decision Tree, Random Forest, Python, Scikit-learn, Pandas, NumPy
+* View Repo Button:** *Link will be provided*
+
+---
+
+### c. Student Course Management System
+
+* **Description:** Created a web application with secure user authentication to manage course enrollments. Implemented CRUD operations and SQL queries for DBMS understanding.
+* **Technologies:** Flask, MySQL, HTML/CSS, JavaScript (Basic), SQL
+* **View Repo Button:** *Link will be provided*
+
+---
+3. INTERNSHIPS ( Certificate drive links must be attached (will be provided in future) so create buttons for each)
+--------------
+**Data Science Intern**
+CodSoft | Mar 2025 – Apr 2025
+
+* Completed a 4-week virtual internship in Data Science
+* Contributed to data-driven tasks and projects with strong performance
+* Earned excellent remarks for skill application and project delivery
+  Certificate ID: ed1bad7
+
+**AI/ML Intern**
+INNOVATE Intern | May 2025
+
+* Completed a 2-week internship in Artificial Intelligence & Machine Learning
+* Developed and submitted a project titled ‘Leaf Disease Detection Flask App’
+* Gained practical experience in ML model deployment using Flask
+  Certificate No: INNOVATE/AIML/0006757
+
+4. SKILLS & CERTIFICATIONS ( Certificate drive links must be attached (will be provided in future) so create buttons for each)
+---------------------------
+Skills:**
+
+* Python Programming – 90%
+* Data Science & Analysis – 85%
+* Machine Learning & AI Fundamentals – 75%
+* Prompt Engineering & Generative AI – 80%
+* Automation & Problem Solving – 85%
+
+
+ Certifications
+
+1. **ChatGPT Advanced Data Analysis**
+   — Vanderbilt University (Coursera)
+
+2. **Prompt Engineering for ChatGPT**
+   — Vanderbilt University (Coursera)
+
+3. **Crash Course on Python**
+   — Google (Coursera)
+
+4. **Python for Data Science and AI**
+   — IBM (Credly)
+
+5. **Python for Data Science, AI & Development**
+   — IBM (Coursera)
+
+6. **Generative AI for Everyone**
+   — DeepLearning.AI (Coursera)
+
+7. **Artificial Intelligence Fundamentals**
+   — IBM SkillsBuild (Credly)
+
+8. **Python for Data Science**
+   — NPTEL (IIT Madras, Swayam)
+
+- View Certificate : Button as a whole and not for each link will be provided
+
+5. ACHIEVEMENTS ( Certificate drive links must be attached (will be provided in future) so create buttons for it)
+---------------
+🏆 Key Achievements of Sugirthan J
+Proficiency in English – ICSE Examination, March 2023
+Awarded by Virudhunagar T.S.M. Manickam Nadar – Janaki Ammal School on the 48th Annual Day (21st Jan 2024)
+
+Proficiency in Commerce – ICSE Examination, March 2023
+Awarded by Virudhunagar T.S.M. Manickam Nadar – Janaki Ammal School on the 48th Annual Day (21st Jan 2024)
+
+Winner – Trivia Titans Quiz, organized by the Department of Computer Science
+- View Certificate : Button as a whole and not for each link will be provided
+
+6. CONTACT INFORMATION
+----------------------
+Phone: +91 7305038681
+Email:  j.sugirthan2006@gmail.com
+Git : https://github.com/SUGIRTHAN-21
+LinkedIN : https://www.linkedin.com/in/sugirthan-826052287?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfLtj0C6PSeCmnvesfniPOQ%3D%3D
+Whatsapp : +91 7305038681
+
+No messaging feutre required 
+

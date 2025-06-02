@@ -1,0 +1,56 @@
+portfolio/
+├── app.py                  # Main Flask application file
+├── static/                 # Static files directory
+│   ├── css/
+│   │   ├── main.css        # Common styles (header, layout, etc.)
+│   │   ├── about.css       # Styles specific to the About section
+│   │   ├── projects.css    # Styles specific to the Projects section
+│   │   ├── internships.css # Styles specific to the Internships section
+│   │   ├── skills.css      # Styles specific to the Skills section
+│   │   ├── achievements.css # Styles specific to the Achievements section
+│   │   └── contact.css     # Styles specific to the Contact section
+│   ├── js/
+│   │   ├── main.js         # Common JavaScript functionality
+│   │   ├── about.js        # JavaScript for the About section
+│   │   ├── projects.js     # JavaScript for the Projects section
+│   │   ├── internships.js  # JavaScript for the Internships section
+│   │   ├── skills.js       # JavaScript for the Skills section
+│   │   ├── achievements.js # JavaScript for the Achievements section
+│   │   └── contact.js      # JavaScript for the Contact section
+│   └── images/             # For your profile picture and any other images
+├── templates/              # HTML templates directory
+│   ├── layout.html         # Base template with common elements
+│   ├── index.html          # Home page (About section)
+│   ├── projects.html       # Projects section
+│   ├── internships.html    # Internships section
+│   ├── skills.html         # Skills section
+│   ├── achievements.html   # Achievements section
+│   └── contact.html        # Contact section
+└── requirements.txt        # Flask dependencies
+
+
+mkdir D:\portfolio && cd D:\portfolio && mkdir static\css static\js static\images templates && (
+echo.> app.py
+echo.> requirements.txt
+echo.> static\css\main.css
+echo.> static\css\about.css
+echo.> static\css\projects.css
+echo.> static\css\internships.css
+echo.> static\css\skills.css
+echo.> static\css\achievements.css
+echo.> static\css\contact.css
+echo.> static\js\main.js
+echo.> static\js\about.js
+echo.> static\js\projects.js
+echo.> static\js\internships.js
+echo.> static\js\skills.js
+echo.> static\js\achievements.js
+echo.> static\js\contact.js
+echo.> templates\layout.html
+echo.> templates\index.html
+echo.> templates\projects.html
+echo.> templates\internships.html
+echo.> templates\skills.html
+echo.> templates\achievements.html
+echo.> templates\contact.html
+)

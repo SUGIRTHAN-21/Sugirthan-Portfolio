@@ -1,0 +1,71 @@
+<!-- Certifications Section -->
+<section id="certifications" class="certificates-section">
+    <div class="certificates-container">
+        <h2><span class="highlight">Certifications 🏅</span></h2>
+        <div class="certificates-row">
+            <div class="certificate-card">
+                <a href="https://www.coursera.org/account/accomplishments/verify/YPHMDDZLEFWS" target="_blank">
+                    <div class="certificate-img">
+                        <img src="{{ url_for('static', filename='images/cert1.png') }}" alt="Artificial Intelligence Fundamentals">
+                    </div>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <a href="https://www.coursera.org/account/accomplishments/verify/HXBXQECZBBPF" target="_blank">
+                    <div class="certificate-img">
+                        <img src="{{ url_for('static', filename='images/cert2.png') }}" alt="Python for Data Science">
+                    </div>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <a href="https://www.coursera.org/account/accomplishments/verify/MK4FFQS9WVQE" target="_blank">
+                    <div class="certificate-img">
+                        <img src="{{ url_for('static', filename='images/cert3.png') }}" alt="Machine Learning Basics">
+                    </div>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <a href="https://www.credly.com/go/QT7GfEaT" target="_blank">
+                    <div class="certificate-img">
+                        <img src="{{ url_for('static', filename='images/cert4.png') }}" alt="Intro to HTML & CSS">
+                    </div>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <a href="https://www.coursera.org/account/accomplishments/verify/5ND6WSV8XFL2" target="_blank">
+                    <div class="certificate-img">
+                        <img src="{{ url_for('static', filename='images/cert5.png') }}" alt="SQL for Beginners">
+                    </div>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <a href="https://coursera.org/share/2837374fb07fec955273adf88add2aee" target="_blank">
+                    <div class="certificate-img">
+                        <img src="{{ url_for('static', filename='images/cert6.png') }}" alt="Flask for Web Dev">
+                    </div>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <a href="https://www.credly.com/go/rcvzaRDO" target="_blank">
+                    <div class="certificate-img">
+                        <img src="{{ url_for('static', filename='images/cert7.png') }}" alt="Git & GitHub Essentials">
+                    </div>
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <a>
+                    <div class="certificate-img">
+                        <img src="{{ url_for('static', filename='images/cert8.png') }}" alt="Cybersecurity Basics">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

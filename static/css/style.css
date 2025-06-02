@@ -609,6 +609,26 @@ footer .social-link:hover {
     100% { opacity: 1; }
 }
 
+/* Certificate Cards */
+.certificate-card {
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.certificate-card img {
+    transition: var(--transition);
+    border: 2px solid var(--border-color);
+}
+
+.certificate-card:hover img {
+    border-color: var(--primary-color);
+}
+
 /* Utility Classes */
 .text-primary {
     color: var(--primary-color) !important;

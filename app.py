@@ -18,8 +18,8 @@ def download_resume():
     """Download resume file"""
     try:
         return send_file('static/documents/Sugirthan_Resume.pdf', 
-                        as_attachment=True, 
-                        download_name='Sugirthan_J_Resume.pdf')
+                         as_attachment=True, 
+                         download_name='Sugirthan_J_Resume.pdf')
     except FileNotFoundError:
         abort(404)
 
@@ -28,4 +28,7 @@ def not_found(error):
     return render_template('index.html'), 404
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Use PORT from environment
+    debug_mode = os.environ.get("FLASK_DEBUG", "false").lower() == "true"
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)
+

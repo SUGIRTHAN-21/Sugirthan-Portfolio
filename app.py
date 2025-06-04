@@ -17,9 +17,9 @@ def index():
 def download_resume():
     """Download resume file"""
     try:
-        return send_file('static/documents/Sugirthan_Resume.pdf', 
+        return send_file('static/documents/Sugirthan J Resume.pdf', 
                          as_attachment=True, 
-                         download_name='Sugirthan_J_Resume.pdf')
+                         download_name='Sugirthan J Resume.pdf')
     except FileNotFoundError:
         abort(404)
 

@@ -234,6 +234,9 @@ html {
     box-shadow: var(--shadow);
     transition: var(--transition);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-card:hover {
@@ -259,6 +262,9 @@ html {
 
 .project-content {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project-content h4 {
@@ -268,7 +274,7 @@ html {
 }
 
 .project-tech {
-    margin: 1rem 0;
+    margin-top: auto;
 }
 
 .tech-tag {
@@ -281,6 +287,12 @@ html {
     font-weight: 500;
     margin: 0.25rem 0.25rem 0.25rem 0;
 }
+
+.project-content .btn {
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
 
 /* Internship Cards */
 .internship-card {

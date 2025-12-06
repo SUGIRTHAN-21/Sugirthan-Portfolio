@@ -1,0 +1,170 @@
+Below is a concise, production-ready prompt you can paste into a code-generation tool or hand to a developer to implement the requested portfolio as a **Flask** app using **only Python, HTML, CSS, and JavaScript**. It contains file structure, exact UI/UX requirements, data placeholders you will fill later, and clear functional expectations.
+
+---
+
+# Flask Portfolio Generator — Instructions
+
+Goal
+Create a production-ready, responsive portfolio web app built with **Flask (Python)** for the backend and **plain HTML, CSS, and JavaScript** for the front end. **Do not use any frontend frameworks or CSS frameworks**. Keep the design white-based, minimal, premium, and corporate. Use subtle accent color(s), soft shadows, rounded corners, and smooth, restrained animations.
+
+Strict tech constraints
+
+* Backend: Python + Flask only (no additional web frameworks).
+* Frontend: plain HTML5, CSS3, and vanilla JavaScript only.
+* Files to produce exactly:
+
+  * `app.py` (Flask app)
+  * `requirements.txt` (containing `Flask`)
+  * `templates/index.html`
+  * `static/css/style.css`
+  * `static/js/script.js`
+  * `static/images/` (placeholder images for profile, cert thumbnails, project thumbnails)
+* No external JS frameworks, no Bootstrap, no Tailwind, etc. Google Fonts may be loaded in HTML.
+
+Project structure (required)
+
+```
+/project-root
+  ├─ app.py
+  ├─ requirements.txt
+  ├─ templates/
+  │   └─ index.html
+  ├─ static/
+  │   ├─ css/
+  │   │   └─ style.css
+  │   ├─ js/
+  │   │   └─ script.js
+  │   └─ images/
+  │       └─ (placeholders)
+```
+
+Data placeholders (you will replace these with your content)
+
+* `{{NAME}}` — Full name
+* `{{ROLE}}` — Role / job title
+* `{{TAGLINE}}` — Short impactful tagline
+* `{{PROFILE_IMAGE}}` — profile image path (placeholder)
+* `{{RESUME_FILE}}` — resume PDF in `/static/` for download
+* `{{BIO_PARAGRAPH}}` — two-paragraph professional biography (for About)
+* `{{CERTIFICATES}}` — array of certificates **only from websites**; each item: `{ "title": "...", "platform": "...", "year": YYYY, "thumbnail": "path" }`
+* `{{PROJECTS}}` — array of projects; each item: `{ "title": "...", "summary": "...", "tech": "HTML, Python, Flask", "link": "https://..." or null, "thumbnail": "path" }`
+* `{{CONTACT_EMAIL}}`, `{{CONTACT_PHONE}}`, `{{CONTACT_LOCATION}}`
+
+> Leave the exact lists empty if not provided; generator should render placeholders and comments where to populate.
+
+Design & UX requirements (must implement)
+
+* Theme: white background, subtle accent color, modern sans-serif (Inter or Poppins via Google Fonts).
+* Typography hierarchy and spacing must be clear and consistent.
+* Sticky top navigation with smooth-scroll to sections and active-state highlight.
+* Hero section: name, role, tagline, profile image placeholder, two CTA buttons: **Download Resume** and **Contact Me** (scrolls to contact). Include high-end, subtle hero animations (fade/slide).
+* About section: two-column layout on desktop (text + image).
+* Skills section: animated horizontal progress bars with **exact** skill names and percentages:
+
+  * Python — 90%
+  * Flask — 75%
+  * Artificial Intelligence — 85%
+  * Machine Learning — 70%
+  * HTML — 60%
+    Trigger the animation using **Intersection Observer** when the section scrolls into view.
+* Certifications section: show **only** online certificates (from websites). Each certificate card must show title, issuing website/platform, year, and thumbnail placeholder. Card hover elevation + polished layout.
+* Achievements section: **must include these three items exactly** (render as award-style cards with iconography and subtle animations):
+
+  * IIC Regional Meet 2025 — Participation
+  * ISC Topper — English & Commerce
+  * Winner — Trivia Titans
+* Projects section: list project cards with title, one-line summary, tech stack, external link if provided, smooth hover animations.
+* Contact section: functional contact form with fields Name, Email, Message. On submit, the Flask backend should validate input, store the message to a local file (e.g., `messages.json` or `messages.csv` in project root), and return a JSON response to the front end. Also display static contact details (email, phone, location). Do not implement sending real email unless credentials are provided; storing locally is acceptable and preferred.
+* Footer: minimal with social links and copyright.
+
+Animations & interactions
+
+* Use Intersection Observer for scroll-triggered reveal/fade-up animations.
+* Use subtle CSS transitions for hover states and smooth active nav highlighting.
+* Keep animations lightweight and professional — fade-ins, slide-ups, and gentle transforms only.
+
+Accessibility & responsiveness
+
+* Fully responsive: mobile-first considerations, hamburger menu (pure CSS/vanilla JS) for small screens.
+* Semantic HTML5 tags (`header`, `nav`, `main`, `section`, `footer`, etc.).
+* Buttons and links must be keyboard-accessible with visible focus states.
+
+Backend behavior (Flask)
+
+* `app.py` must serve:
+
+  * `GET /` — renders `index.html`, injecting the data placeholders for templating (use Jinja to fill data passed from `app.py`).
+  * `POST /contact` — accepts form submission JSON or form-encoded data; validate `name`, `email`, and `message` server-side; on success append message to `messages.json` and return `{"status":"success","message":"Thanks — message received"}` with HTTP 200; on validation error return HTTP 400 with JSON error.
+  * `GET /resume` — serve the resume PDF file in static (or link to `/static/resume.pdf`) with proper `Content-Disposition` for download.
+* Keep dependencies minimal. `requirements.txt` should contain `Flask==` latest stable (or simply `Flask`).
+
+HTML/CSS/JS specifics
+
+* `templates/index.html`:
+
+  * Use Jinja placeholders to inject the data placeholders listed above.
+  * Load Google Font (Inter or Poppins).
+  * Include meta viewport and semantic markup.
+* `static/css/style.css`:
+
+  * Organized sections (variables for colors, spacing).
+  * Responsive grid/flex rules, soft shadows, rounded corners, consistent spacing and sizes.
+  * CSS for progress bars and animated fills (driven by adding a class from JS when in view).
+* `static/js/script.js`:
+
+  * Smooth scrolling behavior for nav links.
+  * Intersection Observer to reveal sections and animate skill bars.
+  * Mobile nav toggle.
+  * AJAX `fetch` for contact form POST to `/contact` with client-side validation and user feedback (success/error toasts).
+  * Highlight current nav item based on scroll position.
+
+Code quality & comments
+
+* All files must be well-formatted and commented where necessary.
+* Use semantic, readable class names (BEM-like or similar) and keep CSS modular by section.
+* Avoid inline styles; keep CSS in `style.css`.
+
+Security & production notes
+
+* Sanitize and validate form data on server side.
+* When saving messages locally, ensure file is appended safely (use file locking or atomic write pattern).
+* Do not commit any secrets (API keys, SMTP creds) into the code. If email sending is later requested, require explicit secrets provided via environment variables.
+
+Run instructions (to include in README or as comments)
+
+1. Create virtualenv and install:
+
+   ```
+   python -m venv venv
+   source venv/bin/activate   # or venv\Scripts\activate on Windows
+   pip install -r requirements.txt
+   ```
+2. Run:
+
+   ```
+   export FLASK_APP=app.py         # Windows: set FLASK_APP=app.py
+   flask run
+   ```
+3. Open `http://127.0.0.1:5000/`.
+
+Deliverables (exact files to return)
+
+* `app.py`
+* `requirements.txt`
+* `templates/index.html`
+* `static/css/style.css`
+* `static/js/script.js`
+* `static/images/` placeholder images
+* Optional: `messages.json` (created at runtime), `static/resume.pdf` placeholder
+
+Final notes for the generator
+
+* Use the exact Skills and percentages above (do not change names or values).
+* Ensure Achievements section contains the three items **exactly** as written.
+* Certifications must be only from websites/platforms — verify the `platform` field is non-empty in each certificate item.
+* Keep UI minimal, premium, and white-based — no dark mode.
+* Return only the files listed above; do not include extra frameworks or build steps.
+
+---
+
+Use this prompt as the single source input. Replace the `{{...}}` placeholders with your personal data before generating code, or provide them to the implementer separately. If you want, I can now generate the full Flask app code (all files above) populated with placeholder content so you can replace it with your real data — say the word and I’ll produce all files.

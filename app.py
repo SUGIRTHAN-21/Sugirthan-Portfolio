@@ -127,6 +127,12 @@ PORTFOLIO_DATA = {
             "description": "Proficiency in Commerce - ISC Examination, March 2023. Awarded by Virudhunagar T.S.M. Manickam Nadar - Janaki Ammal School on the 48th Annual Day.",
             "type": "Academic Excellence",
             "image": "commerce_cert.jpg"
+        },
+        {
+            "title": "Paper Presentation — IC-AISSTMH 2026",
+            "description": "Presented \"A Rule-Based Gmail Complaint Classification System Using API\" at the International Multidisciplinary Conference on AI-Driven Sustainability, organized by PSG College of Arts & Science, 13th Feb 2026.",
+            "type": "Academic Excellence",
+            "image": "icaisstmh_cert.jpg"
         }
     ]
     # --- ACHIEVEMENTS END ---

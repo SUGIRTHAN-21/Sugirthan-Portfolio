@@ -860,10 +860,13 @@ body::before {
   z-index: 1;
   max-width: 800px;
   width: 90%;
+  max-height: 90vh;
   background: var(--bg-card);
   border: 1px solid var(--border-mid);
   border-radius: var(--radius-xl);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 40px 120px rgba(0,0,0,0.12), var(--glow-primary);
   transform: scale(0.9);
   transition: var(--transition);
@@ -882,7 +885,19 @@ body::before {
   transition: var(--transition);
 }
 .certificate-modal__close:hover { background: rgba(37,99,235,0.3); }
-.certificate-modal__image { width: 100%; display: block; }
+.certificate-modal__image-wrapper {
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.certificate-modal__image {
+  width: 100%;
+  max-height: calc(90vh - 60px);
+  object-fit: contain;
+  display: block;
+}
 
 /* ── TOAST ──────────────────────────────────────── */
 .toast {
